@@ -24,8 +24,11 @@ public class Movment : MonoBehaviour
 
        
         
-        moveDirection = new Vector3(Input.GetAxis("Horizontal") * movementSpeed , moveDirection.y, Input.GetAxis("Vertical") * movementSpeed);
+       // moveDirection = new Vector3(Input.GetAxis("Horizontal") * movementSpeed , moveDirection.y, Input.GetAxis("Vertical") * movementSpeed);
 
+       moveDirection = (transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
+       moveDirection = moveDirection.normalized * movementSpeed;
+       
         if (controller.isGrounded)
         {
             moveDirection.y = 0f;
