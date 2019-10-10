@@ -10,6 +10,8 @@ public class Movment : MonoBehaviour
     private Vector3 moveDirection;
     public float gravityScale;
     
+    
+    
     // Start is called before the first frame update
     
     void Start()
@@ -26,8 +28,11 @@ public class Movment : MonoBehaviour
         
        // moveDirection = new Vector3(Input.GetAxis("Horizontal") * movementSpeed , moveDirection.y, Input.GetAxis("Vertical") * movementSpeed);
 
+       float yStore = moveDirection.y;
+       
        moveDirection = (transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
        moveDirection = moveDirection.normalized * movementSpeed;
+       moveDirection.y = yStore;
        
         if (controller.isGrounded)
         {
