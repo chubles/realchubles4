@@ -14,7 +14,9 @@ public class CameraController : MonoBehaviour
     public float rotateSpeed;
 
     public Transform pivot;
-    
+
+    public float maxVeiwAngle;
+    public float minVeiwAngle;
     
     // Start is called before the first frame update
     void Start()
@@ -55,14 +57,14 @@ public class CameraController : MonoBehaviour
         
         
         //limit up down camera controll
-        if (pivot.rotation.eulerAngles.x > 45f && pivot.rotation.eulerAngles.x <180f)
+        if (pivot.rotation.eulerAngles.x > maxVeiwAngle && pivot.rotation.eulerAngles.x <180f)
         {
-            pivot.rotation = Quaternion.Euler(45f,0,0);
+            pivot.rotation = Quaternion.Euler(maxVeiwAngle,0,0);
         }
 
-        if (pivot.rotation.eulerAngles.x > 180f && pivot.rotation.eulerAngles.x < 315f)
+        if (pivot.rotation.eulerAngles.x > 180f && pivot.rotation.eulerAngles.x < 360f + minVeiwAngle)
         {
-                        pivot.rotation = Quaternion.Euler(315f,0,0);
+                        pivot.rotation = Quaternion.Euler(360f +minVeiwAngle,0,0);
         }
         
         
