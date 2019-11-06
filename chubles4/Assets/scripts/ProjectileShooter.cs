@@ -16,7 +16,7 @@ public class ProjectileShooter : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         GameObject hit = collision.gameObject;
-        HealthSystem health = hit.GetComponent<HealthSystem>();
+        HealthSystemE health = hit.GetComponent<HealthSystemE>();
 
         if (health != null)
         {

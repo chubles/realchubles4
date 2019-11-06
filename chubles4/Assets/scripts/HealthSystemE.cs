@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 
 
-public class HealthSystem : MonoBehaviour
+public class HealthSystemE : MonoBehaviour
 {
     public const int maxHealth = 100;
     public int currentHealth = maxHealth;
