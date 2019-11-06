@@ -9,7 +9,9 @@ public class HealthSystem : MonoBehaviour
 {
     public const int maxHealth = 100;
     public int currentHealth = maxHealth;
-    public RectTransform healthbar;
+    public RectTransform health;
+    private Image healthBars = GameObject.Find("healthbar").GetComponent<Image>();
+
 
     public void TakeDamage(int amount)
     {
@@ -21,7 +23,7 @@ public class HealthSystem : MonoBehaviour
         }
 
 
-        //healthBar.sizeDelta = new Vector2(currentHealth * 2, healthBar.sizeDelta.y);
+        healthBars.fillAmount = maxHealth / 100f;
     }
 
 
