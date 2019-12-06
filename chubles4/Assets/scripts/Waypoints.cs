@@ -3,27 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Waypoints : MonoBehaviour
 {
     public GameObject[] waypoints;
-    int current = 0;
+    int currentPos = 0;
     float rotSpeed;
     public float speed;
     float WPradius = 1;
 
     private void Update()
     {
-        if (Vector3.Distance(waypoints[current].transform.position, transform.position) < WPradius)
+        if (Vector3.Distance(waypoints[currentPos].transform.position, transform.position) < WPradius)
         {
-            current++;
-            if (current >= waypoints.Length)
+            currentPos++;
+            if (currentPos >= waypoints.Length)
             {
-                current = 0;
+                currentPos = 0;
             }
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position,
+        transform.position = Vector3.MoveTowards(transform.position, waypoints[currentPos].transform.position,
             Time.deltaTime * speed);
     }
 }

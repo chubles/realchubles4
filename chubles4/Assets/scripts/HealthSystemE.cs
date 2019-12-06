@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-
 public class HealthSystemE : MonoBehaviour
 {
-    public const int maxHealth = 100;
+    private const int maxHealth = 100;
     public int currentHealth = maxHealth;
     public RectTransform health;
-    private Image healthBars = GameObject.Find("healthbar").GetComponent<Image>();
-
-
+    public Image healthBars;
+    
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
@@ -21,11 +18,8 @@ public class HealthSystemE : MonoBehaviour
             currentHealth = 0;
             Debug.Log("Dead");
         }
-
-
+        
         healthBars.fillAmount = maxHealth / 100f;
     }
-
-
 
 }

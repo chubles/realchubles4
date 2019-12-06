@@ -9,24 +9,15 @@ public class Movment : MonoBehaviour
     public CharacterController controller;
     private Vector3 moveDirection;
     public float gravityScale;
-    
-    
-    
-    // Start is called before the first frame update
-    
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
     }
-
-    //87
-    // Update is called once per frame
+    
     void Update()
-    {
-
-       
-        
-       // moveDirection = new Vector3(Input.GetAxis("Horizontal") * movementSpeed , moveDirection.y, Input.GetAxis("Vertical") * movementSpeed);
+    { 
+        // moveDirection = new Vector3(Input.GetAxis("Horizontal") * movementSpeed , moveDirection.y, Input.GetAxis("Vertical") * movementSpeed);
 
        float yStore = moveDirection.y;
        
