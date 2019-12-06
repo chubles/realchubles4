@@ -7,18 +7,6 @@ public class ProjectileShooter : MonoBehaviour
 {
     private float bulletSpeed = 1100;
     public GameObject bullet;
-    
-    void OnCollisionEnter(Collision collision)
-    {
-        GameObject hit = collision.gameObject;
-        HealthSystemE health = hit.GetComponent<HealthSystemE>();
-
-        if (health != null)
-        {
-            health.TakeDamage(10);
-        }
-        Destroy(gameObject);
-    }
 
     void Fire()
     {

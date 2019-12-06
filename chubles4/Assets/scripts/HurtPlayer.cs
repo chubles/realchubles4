@@ -6,15 +6,14 @@ using UnityEngine;
 public class HurtPlayer : MonoBehaviour
 {
     public int damageToGive = 1;
+    [SerializeField] private HealthManager healthManager;
 
    private void OnTriggerEnter(Collider other)
    {
-       if (other.gameObject.tag == "Player")
+       if (other.gameObject.CompareTag("Player"))
        {
-           FindObjectOfType<HealthManager>().HurtPlayer(damageToGive);
+           healthManager.HurtPlayer(damageToGive);
        }
-
-       throw new NotImplementedException();
    }
 }
 

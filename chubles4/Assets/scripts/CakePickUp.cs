@@ -6,12 +6,13 @@ using UnityEngine;
 public class CakePickUp : MonoBehaviour
 {
     public int value;
+    [SerializeField] private GameManager gameManager;
 
    private void OnTriggerEnter(Collider other)
    {
-       if (other.tag == "Player")
+       if (other.CompareTag("Player"))
        {
-           FindObjectOfType<GameManager>().AddCake(value);
+           gameManager.AddCake(value);
            Destroy(gameObject);
        }
  

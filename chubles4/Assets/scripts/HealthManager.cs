@@ -18,16 +18,7 @@ public class HealthManager : MonoBehaviour
    public void HurtPlayer(int damage)
    {
        currentHealth -= damage;
-       healthText.text = "Health =" + currentHealth;
-   }
-   public void HealPlayer(int healamount)
-   {
-       currentHealth += healamount;
-
-       if (currentHealth > maxHealth)
-       {
-           currentHealth = maxHealth;
-       }
+       healthText.text = "Health = " + currentHealth;
    }
   
    public void AddHealth(int healthToAdd)
@@ -37,7 +28,7 @@ public class HealthManager : MonoBehaviour
        {
            currentHealth = maxHealth;
        }
-       healthText.text = "Health =" + currentHealth;
+       healthText.text = "Health = " + currentHealth;
    }
    
 }

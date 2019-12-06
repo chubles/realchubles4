@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class HealthSystemE : MonoBehaviour
 {
-    private const int maxHealth = 100;
-    public int currentHealth = maxHealth;
+    private const int MAX_HEALTH = 100;
+    public int currentHealth = MAX_HEALTH;
     public RectTransform health;
     public Image healthBars;
     
@@ -17,9 +17,10 @@ public class HealthSystemE : MonoBehaviour
         {
             currentHealth = 0;
             Debug.Log("Dead");
+            Destroy(gameObject);
         }
-        
-        healthBars.fillAmount = maxHealth / 100f;
+        Debug.Log((float)currentHealth / MAX_HEALTH);
+        healthBars.fillAmount = (float)currentHealth / (float)MAX_HEALTH;
     }
 
 }

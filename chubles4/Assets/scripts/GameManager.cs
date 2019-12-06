@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
    public void AddCake(int cakeToAdd)
    {
        currentCake += cakeToAdd;
-       cakeText.text = "Cake score" + currentCake;
+       cakeText.text = "Cake score = " + currentCake;
    }
 }
 

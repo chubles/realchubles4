@@ -6,12 +6,13 @@ using UnityEngine;
 public class BananaHeal : MonoBehaviour
 {
     public int valueB;
+    [SerializeField] private HealthManager healthManager;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            FindObjectOfType<HealthManager>().AddHealth(valueB);
+            healthManager.AddHealth(valueB);
             Destroy(gameObject);
         }
     }
