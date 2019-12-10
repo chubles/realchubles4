@@ -21,7 +21,7 @@ public class DamageModel : MonoBehaviour
         else
         {
             Instantiate(newChubles, transform.position, transform.rotation);
-            Destroy();
+            
         }
         
     }

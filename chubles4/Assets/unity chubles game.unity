@@ -1746,7 +1746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503555614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 2, z: -8}
+  m_LocalPosition: {x: 6, y: 1, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4124,7 +4124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193595143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -8}
+  m_LocalPosition: {x: 0, y: 1, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4874,7 +4874,6 @@ GameObject:
   - component: {fileID: 1387773957}
   - component: {fileID: 1387773960}
   - component: {fileID: 1387773956}
-  - component: {fileID: 1387773961}
   m_Layer: 0
   m_Name: chubles
   m_TagString: Player
@@ -5356,10 +5355,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2300012, guid: 4cb360a947fb4c049b2a8f95638b8ead, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400150, guid: 4cb360a947fb4c049b2a8f95638b8ead, type: 3}
       propertyPath: m_LocalPosition.y
       value: 25.21
@@ -5372,6 +5367,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7569e6900713ac946b2dcf7eb1d8c8a2, type: 2}
+    - target: {fileID: 2300012, guid: 4cb360a947fb4c049b2a8f95638b8ead, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2300014, guid: 4cb360a947fb4c049b2a8f95638b8ead, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

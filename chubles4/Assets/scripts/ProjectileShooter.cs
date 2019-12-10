@@ -8,7 +8,7 @@ public class ProjectileShooter : MonoBehaviour
     private float bulletSpeed = 1100;
     public GameObject bullet;
 
-    }
+    
 
     void Fire()
     {
