@@ -9,7 +9,7 @@ public class Movment : MonoBehaviour
     public CharacterController controller;
     private Vector3 moveDirection;
     public float gravityScale;
-    
+//hi    
     void Update()
     {
 
