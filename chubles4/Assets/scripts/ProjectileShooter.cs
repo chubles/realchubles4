@@ -13,8 +13,17 @@ public class ProjectileShooter : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision collision)
+    void Fire()
     {
+        GameObject tempBullet = Instantiate(bullet, transform.position, transform.rotation) as GameObject;
+        Rigidbody tempRigidbodyBullet = tempBullet.GetComponent<Rigidbody>();
+        tempRigidbodyBullet.AddForce(tempRigidbodyBullet.transform.forward * bulletSpeed);
+        Destroy(tempBullet, 3f);
+    }
+    
+    /*void OnCollisionEnter(Collision collision)
+    {
+        Destroy(collision.collider.gameObject);
         GameObject hit = collision.gameObject;
         HealthSystemE health = hit.GetComponent<HealthSystemE>();
 
@@ -23,14 +32,14 @@ public class ProjectileShooter : MonoBehaviour
             health.TakeDamage(10);
         }
         Destroy(gameObject);
-    }
+    }*/
 
-    void Fire()
+    void OnTriggerEnter(Collider other)
     {
-        GameObject tempBullet = Instantiate(bullet, transform.position, transform.rotation) as GameObject;
-        Rigidbody tempRigidbodyBullet = tempBullet.GetComponent<Rigidbody>();
-        tempRigidbodyBullet.AddForce(tempRigidbodyBullet.transform.forward * bulletSpeed);
-        Destroy(tempBullet, 3f);
+        if (other.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
