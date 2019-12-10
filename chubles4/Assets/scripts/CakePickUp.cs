@@ -5,26 +5,14 @@ using UnityEngine;
 
 public class CakePickUp : MonoBehaviour
 {
-
-   public int value;
-  
-   // Start is called before the first frame update
-   void Start()
-   {
-      
-   }
-
-   // Update is called once per frame
-   void Update()
-   {
-      
-   }
+    public int value;
+    [SerializeField] private GameManager gameManager;
 
    private void OnTriggerEnter(Collider other)
    {
-       if (other.tag == "Player")
+       if (other.CompareTag("Player"))
        {
-           FindObjectOfType<GameManager>().AddCake(value);
+           gameManager.AddCake(value);
            Destroy(gameObject);
        }
  

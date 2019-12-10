@@ -3,13 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class ProjectileShooter : MonoBehaviour
 {
     private float bulletSpeed = 1100;
     public GameObject bullet;
-    void Start()
-    {
 
     }
 
