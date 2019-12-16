@@ -944,7 +944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueB: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &320578852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -989,7 +989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueB: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &343824134
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &440830046
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1745,12 +1745,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503555614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: -8}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.84, y: -3.75, z: -12.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 515939885}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &515939880
 GameObject:
@@ -1862,6 +1862,8 @@ Transform:
   m_LocalPosition: {x: -0.84, y: 3.75, z: 4.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 503555615}
+  - {fileID: 1193595144}
   - {fileID: 932626894}
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -1910,7 +1912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!136 &515939889
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2353,7 +2355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueB: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &675819626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2424,7 +2426,7 @@ Transform:
   - {fileID: 1238331003}
   - {fileID: 1425858136}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &737042122 stripped
 GameObject:
@@ -2588,7 +2590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueB: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!1 &816360431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,7 +2846,7 @@ Transform:
   - {fileID: 1668854297}
   - {fileID: 1642053873}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &860371631 stripped
 GameObject:
@@ -2932,7 +2934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &902472538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3106,7 +3108,7 @@ RectTransform:
   m_Children:
   - {fileID: 550109723}
   m_Father: {fileID: 515939885}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3233,7 +3235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &943487093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3424,7 +3426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!1001 &965697913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3560,7 +3562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueB: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &994231519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3694,7 +3696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &1057380718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4086,7 +4088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueB: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &1191355303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4123,12 +4125,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193595143}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -8}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.84, y: -1.75, z: -12.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 515939885}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1200765432 stripped
 GameObject:
@@ -4505,7 +4507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &1320245934
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4637,7 +4639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &1331681022
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4844,7 +4846,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1366671038
 MonoBehaviour:
@@ -4955,7 +4957,7 @@ Transform:
   m_Children:
   - {fileID: 1989750875}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &1387773960
 CharacterController:
@@ -5620,7 +5622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &1642053875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5746,7 +5748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &1668854299
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5854,7 +5856,7 @@ Transform:
   - {fileID: 320578850}
   - {fileID: 1714859143}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1692930016 stripped
 GameObject:
@@ -6019,7 +6021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueB: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &1714859145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6250,7 +6252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueB: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &1825046085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6557,7 +6559,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2046393598
 PrefabInstance:
@@ -6848,7 +6850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToGive: 1
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1366671038}
 --- !u!65 &2106297704
 BoxCollider:
   m_ObjectHideFlags: 0
