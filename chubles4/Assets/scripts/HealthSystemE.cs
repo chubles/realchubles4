@@ -9,7 +9,10 @@ public class HealthSystemE : MonoBehaviour
     public int currentHealth = MAX_HEALTH;
     public RectTransform health;
     public Image healthBars;
-    
+
+    public int enimesLooft;
+    [SerializeField] private GameManager gameManager;
+
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
@@ -17,7 +20,11 @@ public class HealthSystemE : MonoBehaviour
         {
             currentHealth = 0;
             Debug.Log("Dead");
+            
+            gameManager.EnemieStuff(enimesLooft);
+            
             Destroy(gameObject);
+            
         }
         Debug.Log((float)currentHealth / MAX_HEALTH);
         healthBars.fillAmount = (float)currentHealth / (float)MAX_HEALTH;

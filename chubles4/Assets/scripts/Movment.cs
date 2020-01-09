@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,9 @@ public class Movment : MonoBehaviour
     private Vector3 moveDirection;
     public float gravityScale;
 //hi    
+
+
+
     void Update()
     {
 
