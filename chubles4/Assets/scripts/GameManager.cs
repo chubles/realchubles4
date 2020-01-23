@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class GameManager : MonoBehaviour
    public Text cakeToProgress;
    public int EnemiesLeft;
    public Text EnemiesToProgress;
+   public bool nextLevel;
    public void AddCake(int cakeToAdd)
    {
        currentCake += cakeToAdd;
@@ -22,6 +25,25 @@ public class GameManager : MonoBehaviour
    {
        EnemiesLeft -= 1;
        EnemiesToProgress.text = "Enemies till next level = " + EnemiesLeft;
+       
+   }
+
+   public void LevelAdvance(bool nextLevel)
+   {
+       print("advance");
+       if (nextLevel == true)
+       {
+           if (EnemiesLeft + cakeLeft == 0)
+           {
+               SceneManager.LoadScene(0)/*SceneManager.GetActiveScene().buildIndex + 1)*/; 
+               Cursor.lockState = CursorLockMode.None;
+           }
+       }
+   }
+
+   private void Update()
+   {
+       
    }
 
    /*public void MinCake(int cakeToMin)

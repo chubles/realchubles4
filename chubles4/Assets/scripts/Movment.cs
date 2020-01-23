@@ -20,7 +20,7 @@ public class Movment : MonoBehaviour
        float yStore = moveDirection.y;
        
        moveDirection = (transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
-       moveDirection = moveDirection.normalized * movementSpeed;
+       moveDirection = moveDirection * movementSpeed;
        moveDirection.y = yStore;
        
         if (controller.isGrounded)

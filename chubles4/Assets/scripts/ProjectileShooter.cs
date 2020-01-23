@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ProjectileShooter : MonoBehaviour
 {
-    private float bulletSpeed = 1100;
+    private float bulletSpeed = 3000;
     public GameObject bullet;
 
     
