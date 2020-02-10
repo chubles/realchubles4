@@ -15,7 +15,7 @@ public class HealthManager : MonoBehaviour
        currentHealth = maxHealth;
    }
    
-   public void HurtPlayer(int damage)
+   public void HurtPlayer(int damage, Vector3 hitDirection)
    {
        currentHealth -= damage;
        healthText.text = "Health = " + currentHealth;
