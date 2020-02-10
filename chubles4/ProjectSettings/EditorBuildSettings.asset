@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/unity chubles game.unity
     guid: efd316d50a558b3449179a41f729e450
   - enabled: 1
-    path: Assets/unity chubles game - Copy.unity
+    path: Assets/Level2.unity
     guid: 4c558b247a25e5743aba0e49527f1047
   m_configObjects: {}
