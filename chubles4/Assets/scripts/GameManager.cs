@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
    public int EnemiesLeft;
    public Text EnemiesToProgress;
    public bool nextLevel;
+   public int currentScene;
    public void AddCake(int cakeToAdd)
    {
        currentCake += cakeToAdd;
@@ -35,8 +36,8 @@ public class GameManager : MonoBehaviour
        {
            if (EnemiesLeft + cakeLeft == 0)
            {
-               SceneManager.LoadScene(0)/*SceneManager.GetActiveScene().buildIndex + 1)*/; 
-               Cursor.lockState = CursorLockMode.None;
+               currentScene += 1;
+               SceneManager.LoadScene(currentScene + 1)/*SceneManager.GetActiveScene().buildIndex + 1)*/;
            }
        }
    }

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class MainMenu : MonoBehaviour
 {
+    public int startScene;
     public void PlayGame()
     {
-        SceneManager.LoadScene(1)/*SceneManager.GetActiveScene().buildIndex + 1)*/;
+        SceneManager.LoadScene(startScene)/*SceneManager.GetActiveScene().buildIndex + 1)*/;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
