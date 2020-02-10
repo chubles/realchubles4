@@ -28,7 +28,7 @@ public class CameraController : MonoBehaviour
         pivot.transform.position = target.transform.position;
         pivot.transform.parent = target.transform;
 
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
 
     }
     

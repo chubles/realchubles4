@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/main menue.unity
+    guid: 544f40aa179532f489e5caf6c5f884db
+  - enabled: 1
+    path: Assets/unity chubles game.unity
+    guid: efd316d50a558b3449179a41f729e450
   m_configObjects: {}
