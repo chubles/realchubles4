@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level1.unity
     guid: efd316d50a558b3449179a41f729e450
+  - enabled: 0
+    path: Assets/unity chubles game.unity
+    guid: 6820f407171e4ce4e99e4616a408fede
   - enabled: 1
     path: Assets/Level2.unity
     guid: 4c558b247a25e5743aba0e49527f1047
