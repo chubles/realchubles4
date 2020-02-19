@@ -10,12 +10,20 @@ public class Movment : MonoBehaviour
     public CharacterController controller;
     private Vector3 moveDirection;
     public float gravityScale;
+
+    public float knockBackForce;
+
+    public float knockBackTime;
+
+    private float knockBackCounter;
 //hi    
 
 
 
     void Update()
     {
+        if (knockBackCounter <= 0)
+        {
 
        float yStore = moveDirection.y;
        
@@ -28,12 +36,28 @@ public class Movment : MonoBehaviour
             moveDirection.y = 0f;
             if (Input.GetButtonDown("Jump"))
             {
-                moveDirection.y = jumpForce;
+                moveDirection.y = 0f;
+                if (Input.GetButtonDown("Jump"))
+                {
+                    moveDirection.y = jumpForce;
+                }
             }
+
+            moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
+            controller.Move(moveDirection * Time.deltaTime);
+        }
+        else
+        {
+            knockBackCounter -= Time.deltaTime;
         }
 
-        moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
-        controller.Move(moveDirection * Time.deltaTime);
+    }
 
+    public void KnockBack(Vector3 direction)
+    {
+        knockBackCounter = knockBackTime;
+
+        moveDirection = direction * knockBackForce;
+        moveDirection.y = knockBackForce;
     }
 }

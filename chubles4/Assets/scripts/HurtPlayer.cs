@@ -12,7 +12,10 @@ public class HurtPlayer : MonoBehaviour
    {
        if (other.gameObject.CompareTag("Player"))
        {
-           healthManager.HurtPlayer(damageToGive);
+           Vector3 hitDirection = other.transform.position = transform.position;
+           hitDirection = hitDirection.normalized;
+           
+           healthManager.HurtPlayer(damageToGive, hitDirection);
        }
    }
 }
