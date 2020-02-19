@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.UIElements.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,13 +11,13 @@ public class Waypoints : MonoBehaviour
     int currentPos = 0;
     float rotSpeed;
     float WPradius = 1;
+    private float Speed = 5;*/
 
-    private NavMeshAgent Mob;
+    /*private NavMeshAgent Mob;
     public GameObject Player;
     public float MobDistanceRun = 4;*/
     
-
-    public int maxRange;
+    
     public int minRange;
     private Vector3 targetTran;
     private Transform target = null;
@@ -43,7 +44,7 @@ public class Waypoints : MonoBehaviour
             transform.LookAt(targetTran);
             transform.Translate(Vector3.forward * Time.deltaTime);
         }*/
-        
+
         if (target == null) return;
         transform.LookAt(target);
         float distance = Vector3.Distance(transform.position, target.position);
@@ -63,6 +64,7 @@ public class Waypoints : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentPos].transform.position,
             Time.deltaTime * Speed);*/
+        
     }
 
     /*private void Start()

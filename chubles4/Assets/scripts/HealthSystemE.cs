@@ -25,7 +25,7 @@ public class HealthSystemE : MonoBehaviour
             currentHealth = 0;
             Debug.Log("Dead");
             
-            gameManager.EnemieStuff(enimesLooft);
+            //gameManager.EnemieStuff(enimesLooft);
             
             Destroy(gameObject);
             
