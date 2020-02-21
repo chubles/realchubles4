@@ -17,8 +17,13 @@ public class HealthManager : MonoBehaviour
        Time.timeScale = 1;
        
    }
-   
-   public void HurtPlayer(int damage, Vector3 hitDirection)
+
+   /*private void Update()
+   {
+       throw new NotImplementedException();
+   }*/
+
+   public void HurtPlayer(int damage)
    {
        currentHealth -= damage;
        healthText.text = "Health = " + currentHealth;

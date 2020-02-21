@@ -637,10 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d327c8248c189db4c8fc4bfd97b52a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 724244108}
-  - {fileID: 112293116}
-  speed: 5
+  minRange: 0
 --- !u!114 &162429719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,8 +653,8 @@ MonoBehaviour:
   currentHealth: 100
   health: {fileID: 0}
   healthBars: {fileID: 1885470744}
-  enimesLooft: 5
-  gameManager: {fileID: 0}
+  enimesLooft: 0
+  gameManager: {fileID: 1366671036}
 --- !u!114 &162429720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5479,10 +5476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d327c8248c189db4c8fc4bfd97b52a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1443595557}
-  - {fileID: 163477612}
-  speed: 5
+  minRange: 0
 --- !u!114 &653529391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5498,8 +5492,8 @@ MonoBehaviour:
   currentHealth: 100
   health: {fileID: 0}
   healthBars: {fileID: 445095175}
-  enimesLooft: 5
-  gameManager: {fileID: 0}
+  enimesLooft: 0
+  gameManager: {fileID: 1366671036}
 --- !u!114 &653529392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9031,10 +9025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d327c8248c189db4c8fc4bfd97b52a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 315529716}
-  - {fileID: 106766688}
-  speed: 5
+  minRange: 0
 --- !u!114 &1070301056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9050,8 +9041,8 @@ MonoBehaviour:
   currentHealth: 100
   health: {fileID: 0}
   healthBars: {fileID: 2083862746}
-  enimesLooft: 5
-  gameManager: {fileID: 0}
+  enimesLooft: 0
+  gameManager: {fileID: 1366671036}
 --- !u!114 &1070301057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17737,10 +17728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d327c8248c189db4c8fc4bfd97b52a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1475492880}
-  - {fileID: 2074801948}
-  speed: 5
+  minRange: 0
 --- !u!114 &2018386057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17756,8 +17744,8 @@ MonoBehaviour:
   currentHealth: 100
   health: {fileID: 0}
   healthBars: {fileID: 409829948}
-  enimesLooft: 5
-  gameManager: {fileID: 0}
+  enimesLooft: 0
+  gameManager: {fileID: 1366671036}
 --- !u!114 &2018386058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17855,8 +17843,8 @@ MonoBehaviour:
   currentHealth: 100
   health: {fileID: 0}
   healthBars: {fileID: 1941174259}
-  enimesLooft: 5
-  gameManager: {fileID: 0}
+  enimesLooft: 0
+  gameManager: {fileID: 1366671036}
 --- !u!114 &2030590914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17869,10 +17857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d327c8248c189db4c8fc4bfd97b52a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 758653485}
-  - {fileID: 1311677408}
-  speed: 5
+  minRange: 0
 --- !u!65 &2030590915
 BoxCollider:
   m_ObjectHideFlags: 0

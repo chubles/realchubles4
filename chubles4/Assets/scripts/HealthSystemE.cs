@@ -10,14 +10,10 @@ public class HealthSystemE : MonoBehaviour
     public RectTransform health;
     public Image healthBars;
 
-    public Movment thePlayer;
+    public int enimesLooft;
+    [SerializeField] private GameManager gameManager;
 
-    void Start()
-    {
-        thePlayer = FindObjectOfType<Movment>();
-    }
-    
-    public void TakeDamage(int amount, Vector3 direction)
+    public void TakeDamage(int amount)
     {
         currentHealth -= amount;
         if (currentHealth <= 0)
@@ -25,19 +21,13 @@ public class HealthSystemE : MonoBehaviour
             currentHealth = 0;
             Debug.Log("Dead");
             
-            //gameManager.EnemieStuff(enimesLooft);
+            gameManager.EnemieStuff(enimesLooft);
             
             Destroy(gameObject);
             
         }
         Debug.Log((float)currentHealth / MAX_HEALTH);
         healthBars.fillAmount = (float)currentHealth / (float)MAX_HEALTH;
-        
-        thePlayer.KnockBack(direction);
     }
 
-    public void TakeDamage(int amount)
-    {
-        throw new System.NotImplementedException();
-    }
 }
