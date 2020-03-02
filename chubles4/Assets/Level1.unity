@@ -13143,9 +13143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCake: 0
   cakeText: {fileID: 185976972}
-  cakeLeft: 5
+  cakeLeft: 1
   cakeToProgress: {fileID: 1339136048}
-  EnemiesLeft: 5
+  EnemiesLeft: 0
   EnemiesToProgress: {fileID: 2127661673}
   nextLevel: 0
   currentScene: 0
