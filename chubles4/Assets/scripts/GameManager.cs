@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
        print("advance");
        if (nextLevel == true)
        {
-           if (EnemiesLeft + cakeLeft == 0)
+           if (EnemiesLeft + cakeLeft <= 0)
            {
                currentScene += 1;
                SceneManager.LoadScene(currentScene + 1)/*SceneManager.GetActiveScene().buildIndex + 1)*/;
