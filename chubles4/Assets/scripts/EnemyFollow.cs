@@ -7,7 +7,7 @@ public class EnemyFollow : MonoBehaviour
     public int minRange;
     private Vector3 targetTran;
     private Transform target = null;
-    private float enemySpeed = 10;
+    public float enemySpeed = 10;
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") target = other.transform;
     }
