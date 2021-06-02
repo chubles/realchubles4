@@ -131,6 +131,8 @@ ModelImporter:
     100250: Sphere.005
     100252: Sphere.006
     100254: Cube.051
+    100256: BezierCurve
+    100258: Text
     400000: Cone
     400002: Cone.001
     400004: Cone.002
@@ -259,6 +261,8 @@ ModelImporter:
     400250: Sphere.005
     400252: Sphere.006
     400254: Cube.051
+    400256: BezierCurve
+    400258: Text
     2100000: No Name
     2300000: Cone
     2300002: Cone.001
@@ -387,6 +391,8 @@ ModelImporter:
     2300248: Sphere.005
     2300250: Sphere.006
     2300252: Cube.051
+    2300254: BezierCurve
+    2300256: Text
     3300000: Cone
     3300002: Cone.001
     3300004: Cone.002
@@ -514,6 +520,8 @@ ModelImporter:
     3300248: Sphere.005
     3300250: Sphere.006
     3300252: Cube.051
+    3300254: BezierCurve
+    3300256: Text
     4300000: Sphere
     4300002: Sphere.003
     4300004: Cube
@@ -641,6 +649,9 @@ ModelImporter:
     4300248: Sphere.005
     4300250: Sphere.006
     4300252: Cube.051
+    4300254: BezierCurve
+    4300256: Text
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
